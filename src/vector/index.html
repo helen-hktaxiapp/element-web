@@ -37,7 +37,7 @@
         form-action 'self';
         object-src 'self';
         manifest-src 'self';
-    ">
+    "> 
     <% for (var i=0; i < htmlWebpackPlugin.files.css.length; i++) {
         var file = htmlWebpackPlugin.files.css[i];
         var match = file.match(/^bundles\/.*?\/theme-(.*)\.css$/);
@@ -50,7 +50,10 @@
         <% }
     } %>
   </head>
-  <body style="height: 100%; margin: 0;" data-vector-indexeddb-worker-script="<%= htmlWebpackPlugin.files.chunks['indexeddb-worker'].entry %>">
+  <body style="height: 90%; margin: 0;" data-vector-indexeddb-worker-script="<%= htmlWebpackPlugin.files.chunks['indexeddb-worker'].entry %>">
+    <div>
+      <ul  class="list-unstyled" id='ul'></ul>
+    </div>
     <noscript>Sorry, Element requires JavaScript to be enabled.</noscript> <!-- TODO: Translate this? -->
     <section id="matrixchat" style="height: 100%; overflow: auto;" class="notranslate"></section>
     <script src="<%= htmlWebpackPlugin.files.chunks['bundle'].entry %>"></script>
