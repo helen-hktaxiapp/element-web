@@ -65,7 +65,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "sanitize-html": "https://github.com/apostrophecms/sanitize-html",
+    "sanitize-html": "https://github.com/apostrophecms/sanitize-html#3c7f93f2058f696f5359e3e58d464161647226db",
     "ua-parser-js": "^0.7.23"
   },
   "devDependencies": {
